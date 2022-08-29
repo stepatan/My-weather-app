@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="src/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -11,34 +12,38 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+
     <title>Weather app</title>
   </head>
   <body>
     <div class="conteiner">
       <div class="app">
         <h1 class="city">London</h1>
-        <div class="date">
-          <p id="day">Monday</p>
-          <p id="time">18:07</p>
-        </div>
+        <ul class="date">
+          <li id="day">Monday</li>
+          <li id="time">18:07</li>
+        </ul>
         <div class="row">
           <div class="col-6">
             <img src="src/sunny.png" alt="sun" class="picture" width="150px" />
             12 °C|°F
           </div>
           <div class="col-6">
-            <p>Min/Max: 14/27</p>
-            <p>Precipitation:61%</p>
-            <p>Wind: 14km/h</p>
+            <ul>
+              <li>Min/Max: 14/27</li>
+              <li>Precipitation:61%</li>
+              <li>Wind: 14km/h</li>
+            </ul>
           </div>
         </div>
+
+        <small>
+          <a href="https://github.com/stepatan/My-weather-app"
+            >Open-source code</a
+          >
+          by Tetiana Stepanenko
+        </small>
       </div>
-      <small>
-        <a href="https://github.com/stepatan/My-weather-app"
-          >Open-source code</a
-        >
-        by Tetiana Stepanenko
-      </small>
     </div>
     <script src="src/app.js"></script>
   </body>

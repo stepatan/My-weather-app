@@ -1,0 +1,27 @@
+.app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #00204a;
+  border-radius: 10px;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+h1 {
+  color: #00204a;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  color: #00204a;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: aliceblue;
+}
