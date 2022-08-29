@@ -1,11 +1,14 @@
-.app {
+.app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+}
+.app {
   padding: 20px;
   border: 1px solid #00204a;
   border-radius: 10px;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
+
 h1 {
   color: #00204a;
   font-weight: 200;
