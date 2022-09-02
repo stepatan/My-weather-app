@@ -8,6 +8,11 @@
   border-radius: 10px;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
+.form {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
 
 h1 {
   color: #00204a;

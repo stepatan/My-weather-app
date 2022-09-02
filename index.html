@@ -18,6 +18,12 @@
     <div class="conteiner">
       <div class="app-wrapper">
         <div class="app">
+          <div class="form">
+            <form id="city-form">
+              <input type="text" id="inputcity" placeholder="Enter city" />
+              <button type="submit">Search</button>
+            </form>
+          </div>
           <h1 class="city">London</h1>
           <ul class="date">
             <li id="day">Monday</li>
@@ -31,7 +37,7 @@
                 class="picture"
                 width="150px"
               />
-              12 °C|°F
+              <strong id="temperature">12</strong> <span id="units">°C|°F</span>
             </div>
             <div class="col-6">
               <ul>
