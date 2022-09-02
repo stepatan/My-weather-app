@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather app</title>
   </head>
   <body>
@@ -35,13 +36,13 @@
                 src="src/sunny.png"
                 alt="sun"
                 class="picture"
-                width="150px"
+                width="200px"
               />
             </div>
 
             <div class="col-4">
               <strong id="temperature">12</strong>
-              <span id="units">°C | °F</span>
+              <span id="units">°C | <a href="#">°F</a></span>
             </div>
             <div class="col-4">
               <ul>

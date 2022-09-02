@@ -18,7 +18,7 @@ function searchCity(event) {
   function showTemperature(response) {
     let temperature = Math.round(response.data.main.temp);
     let weatherElement = document.querySelector("#temperature");
-    weatherElement.innerHTML = `${temperature}C`;
+    weatherElement.innerHTML = `${temperature}`;
   }
 }
 let cityForm = document.querySelector("#city-form");
