@@ -43,7 +43,19 @@ function formatDate(timestemp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-let apiKey = "002c0778cdd670b201eb98b91d1341a3";
-let city = "Sidney";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(showTemperature);
+function search(city) {
+  let apiKey = "002c0778cdd670b201eb98b91d1341a3";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#inputcity");
+  search(cityInputElement.value);
+}
+
+search("London");
+
+let cityForm = document.querySelector("#city-form");
+cityForm.addEventListener("submit", handleSubmit);
