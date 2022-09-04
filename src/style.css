@@ -30,6 +30,14 @@
   top: -32px;
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: #000;
+  cursor: default;
+}
 h1 {
   color: #00204a;
   font-weight: 500;
