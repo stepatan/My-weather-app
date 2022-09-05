@@ -1,9 +1,10 @@
 .app-wrapper {
-  max-width: 650px;
+  max-width: 700px;
   margin: 30px auto;
 }
 .app {
   padding: 20px;
+  padding-left: 40px;
   border: 1px solid #00204a;
   border-radius: 10px;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
@@ -62,8 +63,7 @@ body {
 .weather img {
   margin-right: 0px;
 }
-
-.container {
+#forecast {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -71,10 +71,4 @@ body {
   flex-wrap: nowrap;
   padding: 0;
   margin: 0;
-}
-.card {
-  flex: auto;
-  margin: 0px;
-  padding: 0px;
-  max-height: 140px;
 }
