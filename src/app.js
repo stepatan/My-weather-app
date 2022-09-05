@@ -21,6 +21,32 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function showForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="card-title">${day}</h6>
+          <img
+            src="https://openweathermap.org/img/wn/01d@2x.png"
+            class="card-img-top"
+            alt="sunny"
+          />
+          <p class="card-text">28/12</p>
+        </div>
+      </div>
+    </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function formatDate(timestemp) {
   let date = new Date(timestemp);
   let days = [
@@ -85,3 +111,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelciusTemperature);
 
 search("London");
+showForecast();

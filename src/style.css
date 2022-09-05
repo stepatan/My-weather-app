@@ -1,5 +1,5 @@
 .app-wrapper {
-  max-width: 600px;
+  max-width: 650px;
   margin: 30px auto;
 }
 .app {
@@ -61,4 +61,20 @@ body {
 }
 .weather img {
   margin-right: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+}
+.card {
+  flex: auto;
+  margin: 0px;
+  padding: 0px;
+  max-height: 140px;
 }
