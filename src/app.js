@@ -26,8 +26,10 @@ function showForecast(response) {
           class="card-img-top"
           alt="sunny"
         />
-        <p class="card-text"><span>
-          ${Math.round(forecastDay.temp.max)}° ${Math.round(
+        <p class="card-text"><span class="temp-max">
+          ${Math.round(
+            forecastDay.temp.max
+          )}°</span>    <span class="temp-min">${Math.round(
           forecastDay.temp.min
         )}°</span></p>
       </div>
