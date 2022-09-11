@@ -78,7 +78,7 @@ function formatDate(timestemp) {
     "Sunday",
     "Monday",
     "Tuesday",
-    "Wed",
+    "Wednesday",
     "Thu",
     "Friday",
     "Saturday",
